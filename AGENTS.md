@@ -30,4 +30,16 @@ cd socops
 
 Keep `BoardAssembler.java` and `game.html` board/win rules synchronized. Preserve package boundaries, records, JUnit style, Spring-free domain logic, and existing browser styles. Follow the [CSS instructions](.github/instructions/css-utilities.instructions.md) and [frontend instructions](.github/instructions/frontend-design.instructions.md).
 
+## Design guide
+
+Soc Ops uses a warm, community-focused solarpunk visual language inspired by shared gardens, field notes, and clean solar energy. Future frontend work should preserve this direction:
+
+- Use forest green, leafy green, solar yellow, paper cream, and terracotta as the core palette. Define reusable colors as CSS variables in `app.css`.
+- Prefer editorial serif typography for expressive headings and monospace typography for labels, metadata, and game status. Avoid generic UI stacks and remote font dependencies.
+- Build atmosphere with restrained CSS textures, patterns, borders, and natural geometric forms. Do not add purple gradients, generic glassmorphism, decorative blobs, or nested cards.
+- Keep the experience focused on the bingo workflow: clear hierarchy, stable 5x5 tile dimensions, readable prompts, visible progress, and obvious selected/free/winning states.
+- Preserve accessibility: maintain semantic labels and ARIA attributes, provide visible keyboard focus, ensure readable contrast, and support `prefers-reduced-motion`.
+- Keep interactions lightweight and purposeful. CSS-only reveal, hover, active, and victory animations are preferred for this Thymeleaf page.
+- Check desktop and narrow mobile layouts after template or CSS changes. Prompts must wrap without changing the board geometry or causing controls to overlap.
+
 For template/CSS changes, inspect `http://localhost:8080` after the checklist. Use [README](README.md), [Portuguese README](README.pt_BR.md), and [workshop guide](workshop/GUIDE.md) for setup; do not duplicate them.
