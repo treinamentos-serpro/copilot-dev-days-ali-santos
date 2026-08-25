@@ -13,31 +13,42 @@
 <!--  LOBBY — visible before a game starts                          -->
 <!-- ============================================================= -->
 <div id="lobbyView" class="lobby-shell">
+    <div class="lobby-horizon" aria-hidden="true"></div>
     <div class="lobby-sun" aria-hidden="true"></div>
+    <div class="lobby-soil" aria-hidden="true"></div>
     <main class="lobby-content">
         <div class="brand-lockup reveal reveal-one">
             <span class="brand-mark" aria-hidden="true">✳</span>
-            <span class="eyebrow">community field notes / 01</span>
+            <span class="eyebrow">community garden / field notes</span>
         </div>
-        <h1 class="lobby-title reveal reveal-two">Soc<br/><em>Ops</em></h1>
-        <p class="lobby-lede reveal reveal-three">A social bingo walk through the people, stories and small sparks in the room.</p>
+        <h1 class="lobby-title reveal reveal-two">Welcome to the<br/><em>shared garden.</em></h1>
+        <p class="lobby-lede reveal reveal-three">Start with one conversation, plant small moments of connection, and let your board bloom together.</p>
 
-        <section class="how-panel reveal reveal-four" aria-labelledby="howToPlayTitle">
-            <div class="panel-kicker"><span>01</span><span class="kicker-rule"></span><span>growing together</span></div>
-            <h2 id="howToPlayTitle">Plant a little<br/><strong>connection.</strong></h2>
-            <ol class="play-steps">
-                <li><span>01</span><p>Find someone who matches a square.</p></li>
-                <li><span>02</span><p>Tap it and keep exploring.</p></li>
-                <li><span>03</span><p>Grow five in a row to bloom.</p></li>
-            </ol>
+        <section class="garden-cues reveal reveal-four" aria-hidden="true">
+            <div class="cue-row">
+                <span class="cue-chip">seed</span>
+                <span class="cue-sprout">⌇</span>
+                <span class="cue-chip">sprout</span>
+                <span class="cue-sprout">⌁</span>
+                <span class="cue-chip">bloom</span>
+            </div>
         </section>
 
         <button onclick="launchGame()" class="start-button reveal reveal-five">
-            <span>Open the field</span><span class="button-arrow" aria-hidden="true">↗</span>
+            <span>start exploring</span><span class="button-arrow" aria-hidden="true">↗</span>
         </button>
-        <p class="lobby-note reveal reveal-five"><span class="solar-dot"></span> made for curious humans</p>
+        <p class="lobby-note reveal reveal-five"><span class="solar-dot"></span> gather stories, mark squares, grow a line</p>
+
+        <section class="how-panel reveal reveal-six" aria-labelledby="howToPlayTitle">
+            <h2 id="howToPlayTitle">How it grows</h2>
+            <ol class="play-steps">
+                <li><span>01</span><p>Find a person who matches a prompt.</p></li>
+                <li><span>02</span><p>Mark the square and keep wandering.</p></li>
+                <li><span>03</span><p>Connect five tiles in a row to bloom.</p></li>
+            </ol>
+        </section>
     </main>
-    <aside class="lobby-side-note" aria-hidden="true"><span>social bingo</span><span>sun / soil / stories</span></aside>
+    <aside class="lobby-side-note" aria-hidden="true"><span>social bingo</span><span>shared soil / shared stories</span></aside>
 </div>
 
 <!-- ============================================================= -->
