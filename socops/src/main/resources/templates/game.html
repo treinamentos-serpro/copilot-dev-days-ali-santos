@@ -15,27 +15,36 @@
 <div id="lobbyView" class="lobby-shell">
     <div class="lobby-sun" aria-hidden="true"></div>
     <main class="lobby-content">
-        <div class="brand-lockup reveal reveal-one">
-            <span class="brand-mark" aria-hidden="true">✳</span>
-            <span class="eyebrow">community field notes / 01</span>
-        </div>
-        <h1 class="lobby-title reveal reveal-two">Soc<br/><em>Ops</em></h1>
-        <p class="lobby-lede reveal reveal-three">A social bingo walk through the people, stories and small sparks in the room.</p>
+        <section class="lobby-frame">
+            <header class="lobby-headline reveal reveal-one">
+                <div class="brand-lockup">
+                    <span class="brand-mark" aria-hidden="true">✳</span>
+                    <span class="eyebrow">community field notes / issue 01</span>
+                </div>
+                <p class="lobby-kicker">People-first icebreaker</p>
+            </header>
 
-        <section class="how-panel reveal reveal-four" aria-labelledby="howToPlayTitle">
-            <div class="panel-kicker"><span>01</span><span class="kicker-rule"></span><span>growing together</span></div>
-            <h2 id="howToPlayTitle">Plant a little<br/><strong>connection.</strong></h2>
-            <ol class="play-steps">
-                <li><span>01</span><p>Find someone who matches a square.</p></li>
-                <li><span>02</span><p>Tap it and keep exploring.</p></li>
-                <li><span>03</span><p>Grow five in a row to bloom.</p></li>
-            </ol>
+            <div class="lobby-grid">
+                <section class="lobby-primary reveal reveal-two" aria-labelledby="lobbyTitle">
+                    <h1 id="lobbyTitle" class="lobby-title">Soc<br/><em>Ops</em></h1>
+                    <p class="lobby-lede">A social bingo walk through the people, stories, and sparks already in this room.</p>
+                    <button onclick="launchGame()" class="start-button reveal reveal-three">
+                        <span>Open the field</span><span class="button-arrow" aria-hidden="true">↗</span>
+                    </button>
+                    <p class="lobby-note reveal reveal-three"><span class="solar-dot"></span> made for curious humans</p>
+                </section>
+
+                <section class="how-panel reveal reveal-four" aria-labelledby="howToPlayTitle">
+                    <div class="panel-kicker"><span>how to play</span><span class="kicker-rule"></span><span>concise guide</span></div>
+                    <h2 id="howToPlayTitle">Plant a little<br/><strong>connection.</strong></h2>
+                    <ol class="play-steps">
+                        <li><span>01</span><p>Find a person that matches a square.</p></li>
+                        <li><span>02</span><p>Mark the tile and keep moving.</p></li>
+                        <li><span>03</span><p>Grow five in a row to bloom.</p></li>
+                    </ol>
+                </section>
+            </div>
         </section>
-
-        <button onclick="launchGame()" class="start-button reveal reveal-five">
-            <span>Open the field</span><span class="button-arrow" aria-hidden="true">↗</span>
-        </button>
-        <p class="lobby-note reveal reveal-five"><span class="solar-dot"></span> made for curious humans</p>
     </main>
     <aside class="lobby-side-note" aria-hidden="true"><span>social bingo</span><span>sun / soil / stories</span></aside>
 </div>
