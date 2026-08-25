@@ -71,7 +71,7 @@
             <div class="board-legend" aria-label="Board legend">
                 <span><i class="legend-swatch available"></i> open</span>
                 <span><i class="legend-swatch planted"></i> planted</span>
-                <span><i class="legend-swatch free"></i> free space</span>
+                <span><i class="legend-swatch free"></i> espaço livre</span>
             </div>
         </section>
     </main>
@@ -149,7 +149,7 @@
 
             if (tile.freeCell) { btn.disabled = true; }
             btn.setAttribute("aria-pressed", String(tile.selected));
-            btn.setAttribute("aria-label", tile.freeCell ? "Free space" : tile.prompt);
+            btn.setAttribute("aria-label", tile.freeCell ? "Espaço livre" : tile.prompt);
 
             /* inner label */
             var labelSpan = document.createElement("span");

@@ -8,7 +8,7 @@ import com.socops.data.IcebreakerPrompts;
  * @param id        zero-based position (0-24)
  * @param prompt    display text shown on the tile
  * @param selected  whether the player has tapped this tile
- * @param freeCell  true only for the centre "FREE SPACE" tile
+ * @param freeCell  true only for the centre "ESPAÇO LIVRE" tile
  */
 public record BingoCell(int id, String prompt, boolean selected, boolean freeCell) {
 

@@ -7,6 +7,7 @@ import java.util.Set;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.socops.data.IcebreakerPrompts;
 import com.socops.model.BingoCell;
 import com.socops.model.WinningStreak;
 
@@ -53,6 +54,17 @@ class BoardAssemblerTests {
     }
 
     /* ── cell toggling ────────────────────────────────────────── */
+
+    @Test
+    @DisplayName("Prompts are in Portuguese and themed around sustainable living")
+    void promptsArePortugueseAndSustainable() {
+        assertTrue(IcebreakerPrompts.ALL_PROMPTS.contains("costumo levar uma garrafa reutilizável"),
+                "The board should include sustainable habits in Portuguese");
+        assertTrue(IcebreakerPrompts.ALL_PROMPTS.contains("já participei de uma limpeza de rua"),
+                "The board should include community sustainability actions");
+        assertEquals("ESPAÇO LIVRE", IcebreakerPrompts.FREE_CELL_LABEL,
+                "Free cell label should be in Portuguese");
+    }
 
     @Test
     @DisplayName("Flipping a regular cell toggles its selection on then off")
