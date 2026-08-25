@@ -13,30 +13,33 @@
 <!--  LOBBY — visible before a game starts                          -->
 <!-- ============================================================= -->
 <div id="lobbyView" class="lobby-shell">
-    <div class="lobby-sun" aria-hidden="true"></div>
     <main class="lobby-content">
-        <div class="brand-lockup reveal reveal-one">
-            <span class="brand-mark" aria-hidden="true">✳</span>
-            <span class="eyebrow">community field notes / 01</span>
+        <div class="lobby-poster-head reveal reveal-one">
+            <div class="brand-lockup">
+                <span class="brand-mark" aria-hidden="true">✳</span>
+                <span class="eyebrow">social invitation poster / round 01</span>
+            </div>
+            <p class="lobby-grid-ref"><span aria-hidden="true">⌗</span> 5 × 5 connection grid</p>
         </div>
-        <h1 class="lobby-title reveal reveal-two">Soc<br/><em>Ops</em></h1>
-        <p class="lobby-lede reveal reveal-three">A social bingo walk through the people, stories and small sparks in the room.</p>
+
+        <h1 class="lobby-title reveal reveal-two">Find your<br/><em>next favorite human.</em></h1>
+        <p class="lobby-lede reveal reveal-three">Soc Ops turns introductions into a shared game: ask one question, mark one square, and build a line of stories together.</p>
 
         <section class="how-panel reveal reveal-four" aria-labelledby="howToPlayTitle">
-            <div class="panel-kicker"><span>01</span><span class="kicker-rule"></span><span>growing together</span></div>
-            <h2 id="howToPlayTitle">Plant a little<br/><strong>connection.</strong></h2>
+            <div class="panel-kicker"><span>how it plays</span><span class="kicker-rule"></span><span>quick + social</span></div>
+            <h2 id="howToPlayTitle">Walk the room.<br/><strong>Collect connections.</strong></h2>
             <ol class="play-steps">
-                <li><span>01</span><p>Find someone who matches a square.</p></li>
-                <li><span>02</span><p>Tap it and keep exploring.</p></li>
-                <li><span>03</span><p>Grow five in a row to bloom.</p></li>
+                <li><span>01</span><p>Find someone who matches a prompt.</p></li>
+                <li><span>02</span><p>Tap that square and keep mingling.</p></li>
+                <li><span>03</span><p>Get five in a row to bloom bingo.</p></li>
             </ol>
+            <button onclick="launchGame()" class="start-button reveal reveal-five">
+                <span>Start social bingo</span><span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+            <p class="lobby-note reveal reveal-five"><span class="solar-dot"></span> best played out loud with real people</p>
         </section>
-
-        <button onclick="launchGame()" class="start-button reveal reveal-five">
-            <span>Open the field</span><span class="button-arrow" aria-hidden="true">↗</span>
-        </button>
-        <p class="lobby-note reveal reveal-five"><span class="solar-dot"></span> made for curious humans</p>
     </main>
+    <div class="lobby-marks" aria-hidden="true"><span>✳</span><span>＋</span><span>◻</span><span>◻</span><span>＋</span></div>
     <aside class="lobby-side-note" aria-hidden="true"><span>social bingo</span><span>sun / soil / stories</span></aside>
 </div>
 
